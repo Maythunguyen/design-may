@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.category-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    grid-gap: 32px; /* Adjust the gap between grid items */
+    margin: auto;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    .category-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

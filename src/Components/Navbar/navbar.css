@@ -1,0 +1,251 @@
+/* navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVIGATION BAR */
+
+.my-navbar-container {
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 16px 80px 64px 80px;
+    z-index: 1000;
+}
+
+.home-cart {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.nav-icons {
+    margin-left: 500px;
+}
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
+.logo span {
+    font-weight: 500;
+}
+
+.nav-icons a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-icons i {
+    font-size: 20px;
+}
+.hamburger-menu {
+    width: 40px;
+    height: 20px;
+    position: fixed;
+    top: 85px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #333;
+    transition: all 0.8s;
+}
+.change .line-1 {
+    transform: rotateZ(-45deg) translate(-5px, 6px);
+}
+.change .line-2 {
+    transform: rotateZ(45deg) translate(-5px, -6px);
+}
+
+.nav-area {
+    position: absolute;
+}
+
+.navbar {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: #e8e6db;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 20% 0 0 60%;
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+    z-index: 1000;
+}
+.change {
+    right: 0;
+}
+
+
+
+.nav-list {
+    text-align: right;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 25px;
+
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 4px 0;
+}
+.nav-list .icon {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    transform-origin: right;
+}
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 16px 80px 64px 80px;
+    }
+    
+    .home-cart {
+        width: 75%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    }
+    .nav-icons {
+        margin-left: 85px;
+    }
+
+    .hamburger-menu {
+        width: 40px;
+        height: 20px;
+        position: fixed;
+        top: 85px;
+        right: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1000;
+    }
+    
+    .line {
+        width: 100%;
+        height: 1.5px;
+        background-color: #333;
+        transition: all 0.8s;
+    }
+    .change .line-1 {
+        transform: rotateZ(-45deg) translate(-8px, 6px);
+    }
+    .change .line-2 {
+        transform: rotateZ(45deg) translate(-8px, -6px);
+    }
+    
+    .navbar {
+        width: 200px;
+        height: 100%;
+        background-color: #e8e6db;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20% 0 0 60%;
+        transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+    }
+    .change {
+        right: 0;
+    }
+    
+    .nav-list {
+        text-align: right;
+    }
+    
+    .nav-item {
+        list-style: none;
+        margin: 25px;
+    
+    }
+    .nav-link {
+        text-decoration: none;
+        font-size: 16px;
+        color: #333;
+        font-weight: 300;
+        letter-spacing: 1px;
+        position: relative;
+        padding: 4px 0;
+    }
+    .nav-list i {
+        text-decoration: none;
+        font-size: 16px;
+        color: #333;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .nav-link::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+        transform-origin: right;
+    }
+    .nav-link:hover::after {
+        transform: scaleX(1);
+    }
+    
+  }

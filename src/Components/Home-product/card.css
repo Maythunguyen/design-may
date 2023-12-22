@@ -1,0 +1,173 @@
+/* FEATURE PRODUCT */
+.product-section {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 300px;
+}
+
+.product-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feature {
+    font-weight: 300;
+    font-size: 56px;
+
+}
+.procduct {
+    font-weight: 200;
+    font-size: 56px;
+    margin-bottom: 32px;
+
+}
+
+/* SCROLLS */
+
+.scrolls { 
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    gap: var(--size-3);
+    flex-direction: row;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    margin-bottom: 48px;
+    gap: 32px;
+    
+    
+} 
+.scrolls img { 
+    inline-size: 100%;
+    object-fit: cover;
+    margin: 2px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    display:inline-block;
+    display:inline;
+    zoom:1;
+    vertical-align:top;
+}
+
+hr {
+    margin-bottom: 32px;
+    width: 80%;
+}
+
+.card-product {
+   padding: var(--size-3);
+   grid-template-rows: min-content;
+   
+}
+
+.card-title {
+    text-align: left;
+    margin-bottom: 24px;
+}
+.card-title h3 {
+    font-size: 24px;
+    font-weight: 200;
+}
+.card-price {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.card-price h3 {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.card-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-btn button {
+    cursor: pointer;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #333;
+
+}
+
+.card-btn .icon {
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.round-button {
+    border-radius: 50%;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: 1px solid #333;
+    background: none;
+    margin-bottom: 64px;
+
+}
+
+
+
+.view-more {
+    width: 60%;
+    text-align: center;
+    padding-top: 50%;
+}
+.view-more a {
+    cursor: pointer;
+    padding: 24px 32px;
+    font-size: 16px; /* Adjust the font size as needed */
+    border: 1px solid #333;
+    background: none;
+    color: #000;
+    text-decoration: none;
+
+}
+
+.space {
+    width: 1%;
+}
+
+@media(max-width: 600px) {
+
+    .feature {
+        font-size: 32px;
+    }
+    .procduct {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 100%;
+      }
+      
+
+    .card-title h3 {
+        font-size: 20px;
+    }
+    .card-price  h3{
+        font-size: 20px;
+    }
+
+    .card-btn i {
+        font-size: 20px;
+      }
+
+    .card-btn button {
+        cursor: pointer;
+        padding: 8px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        background-color: #fff;
+        border: 1px solid #333;
+    
+    }
+    
+}

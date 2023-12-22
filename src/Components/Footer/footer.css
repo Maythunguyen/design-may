@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.footer {
+    margin-top: 64px;
+    background-color: #d9d9d9;
+    color: #000;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: inline-block;
+
+
+}
+.footer-links {
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+
+.footer-links ul {
+    padding-left: 0;
+}
+
+.footer-links li{
+    list-style: none;
+    margin-bottom: 24px;
+
+}
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.footer-contact {
+    margin-bottom: 48px;
+    
+
+}
+.footer-contact p {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+
+
+.footer-media {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--size-1);
+    margin-bottom: 64px;
+}
+.media {
+    font-size: 32px;
+    font-weight: lighter;
+    color: #000;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.footer-bottom p {
+    display: inline-block;
+    color: #000;
+    font-weight: lighter;
+}
+
+/* email */
+
+.footer-contact  a {
+    text-decoration: none;
+    color: #000
+}
+
+.footer-contact  a:hover {
+    color: #b08c73;
+}
+
+/* RESPONSIVENESS FOOTER */
+@media (max-width: 600px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+  
+    .footer .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content .footer-links {
+      margin-top: 20px;
+    }
+  
+    .footer-contact {
+      margin-bottom: 32px;
+    }
+
+    .footer-links a {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+
+    .footer-contact a {
+        font-size: 16px;
+    }
+
+    .footer-contact p {
+        font-size: 16px;
+    }
+
+    .footer-media {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 32px;
+        margin-bottom: 48px;
+    }
+    .footer-media .media {
+        font-size: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+  }

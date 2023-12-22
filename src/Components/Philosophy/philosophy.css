@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-top: 700px;
+    margin-bottom: 300px;
+
+}
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.the, .phylosophy {
+    font-weight: 300;
+    font-size: 56px;
+    text-align: center;
+}
+
+.phylosophy {
+    font-weight: 200;
+}
+
+.section-img {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+    
+    
+}
+
+.section-img img {
+    width: 100%;
+    max-width: 400px; 
+    object-fit: cover;
+    padding: 16px;
+    border: 1px dashed #ccc;
+}
+
+.small-height {
+    width: 40%;
+    height: 500px;
+    object-fit: cover;
+}
+.section-text {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 56px;
+}
+.section-text p {
+    text-align: justify;
+}
+
+.section-btn {
+    margin-left: 80px;
+    float: left;
+}
+
+.section-btn button {
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width:600px) {
+
+    .main-section {
+        text-align: center;
+        display: block;
+        position: relative;
+        margin-top: 100px;
+    
+    }
+    .the, .phylosophy {
+        font-weight: 300;
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .phylosophy {
+        font-weight: 200;
+    }
+
+    .section-img {
+        gap: 8px;
+    }
+
+
+    .small-height {
+        width: 25%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .big-height {
+        width: 25%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+    .section-text {
+        width: 50%;
+        margin-left: 80px;
+        margin-bottom: 56px;
+    }
+    .section-text p {
+        font-size: 12px;
+    }
+
+    .section-btn button {
+        padding: 8px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        background-color: #fff;
+        border: 1px solid #333;
+    }
+
+    
+}
