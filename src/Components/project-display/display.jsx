@@ -18,7 +18,7 @@ function Display() {
                     <h2 className="display-5">Ox Point</h2>
                     <p className="lead">Residential style</p>
                 </div>
-                <img src="https://hommes.studio/wp-content/uploads/18_p_casa_jl_5_solidos_photography_nick_wiesner_anna_dave_yatzer.jpeg" alt="Ox Point Residential Style" className="img-fluid mx-auto" style={{ width: '90%', height: '500px', objectFit: 'cover' }}/>
+                <img src="https://ulaburgiel.com/wp-content/uploads/2019/03/House-in-the-Woods-Interior-Design-Ula-Burgiel-1.jpg" alt="c" className="img-fluid mx-auto" style={{ width: '90%', height: '500px', objectFit: 'cover' }}/>
             </div>
             <div className="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                 <div className="my-3 py-3">

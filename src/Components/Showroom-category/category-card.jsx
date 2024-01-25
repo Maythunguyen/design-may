@@ -6,11 +6,8 @@ function CategoryCard(props) {
     <div className="category-card">
       <div className="category-detail">
         <img src={props.img} alt={props.title} className="category-img"/>
-        <div className="category-text">
+        <div className="category-title">
             <h3>{props.title}</h3>
-        </div>
-        <div className="category-icon">
-            <img src={props.imgIcon}/>   
         </div>
       </div>
     </div>

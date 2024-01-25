@@ -6,7 +6,8 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+
+const Navbar = ({ cartCount }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     function toggleMenu() {
@@ -22,10 +23,11 @@ const Navbar = () => {
     <div className={`my-navbar-container ${isMenuOpen ? 'change' : ''}`} onClick={toggleMenu}>
         <div className="home-cart">
             <div className="logo" onClick={handleLogoClick}>
-                <span><Link to="/"><img src={house} alt="house"/>Design May</Link></span>
+                <img src={house} alt="house"/>
+                <Link to="/">Design May</Link>
             </div>
             <div className="nav-icons">
-                <Link to="/cart"><HiOutlineShoppingBag size={24} /><span className="count">(0)</span></Link>   
+                <Link to="/cart"><HiOutlineShoppingBag size={24} /><span className="count">({cartCount})</span></Link>   
             </div>
         </div>
         <div className="nav-area">

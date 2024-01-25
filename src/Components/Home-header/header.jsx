@@ -1,6 +1,6 @@
 import React from 'react';
 import "./header.css";
-import BG from '../Assets/image/bg.png';
+import BG from '../Assets/image/bg1.png';
 
 function Header() {
   return (
