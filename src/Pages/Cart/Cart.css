@@ -1,0 +1,44 @@
+.order-wrap {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .cart-header, .cart-item {
+    display: grid;
+    grid-template-columns: 100px 3fr 1fr 1fr 1fr; /* Adjust the first value based on the image width */
+    gap: 16px; /* Adjust the spacing between grid items */
+    align-items: center;
+  }
+  
+  .cart-header > div, .cart-item > div {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .cart-header {
+    margin-bottom: 10px;
+  }
+  
+  .cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Optional: adds a separator line between items */
+  }
+  
+  .product-img img {
+    width: 100px; /* Make the image fill the container */
+    height: auto;
+    object-fit: cover; /* Keeps the aspect ratio */
+    border-radius: 5px; /* Optional: for rounded corners */
+  }
+  
+  .total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  

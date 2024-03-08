@@ -20,7 +20,7 @@ const Navbar = ({ cartCount }) => {
 
 
   return (
-    <div className={`my-navbar-container ${isMenuOpen ? 'change' : ''}`} onClick={toggleMenu}>
+    <div className={`my-navbar-container ${isMenuOpen ? 'change' : ''}`}>
         <div className="home-cart">
             <div className="logo" onClick={handleLogoClick}>
                 <img src={house} alt="house"/>
@@ -32,11 +32,11 @@ const Navbar = ({ cartCount }) => {
         </div>
         <div className="nav-area">
             <nav className={`navbar ${isMenuOpen ? 'change' : ''}`}>
-                <div className="hamburger-menu" >
-                    <div className={`line line-1 ${isMenuOpen ? 'change' : ''}` } onClick={toggleMenu}></div>
-                    <div className={`line line-2 ${isMenuOpen ? 'change' : ''}` } onClick={toggleMenu}></div>
+                <div className="hamburger-menu" onClick={toggleMenu}>
+                    <div className={`line line-1 ${isMenuOpen ? 'change' : ''}` } ></div>
+                    <div className={`line line-2 ${isMenuOpen ? 'change' : ''}` } ></div>
                 </div>
-                <ul className={`nav-list ${isMenuOpen ? 'change' : ''}`} onClick={toggleMenu}>
+                <ul className={`nav-list ${isMenuOpen ? 'change' : ''}`} >
                     <li className="nav-item" ><Link to="/" className="nav-link">Home</Link></li>
                     <li className="nav-item"><Link to="/showroom" className="nav-link">Showroom</Link></li>
                     <li className="nav-item"><Link to="/project" className="nav-link">Project</Link></li>

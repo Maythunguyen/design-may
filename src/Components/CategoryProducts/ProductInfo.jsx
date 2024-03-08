@@ -4,21 +4,32 @@ import categoryDetails from '../Showroom-category/categoryDetail';
 import "./ProductInfo.css";
 import { BsDash } from "react-icons/bs";
 import { GoPlus } from "react-icons/go";
+import { useCart } from '../contexts/CartContext';
 
 
 function ProductInfo({ setCartCount }) {
+    const { addToCart } = useCart();
     const [count, setCount] = useState(0);
-    
-    function addToCart() {
-      if (count === 0) {
-        setCount(1)
-        // If count is 0, add 1 to cart
-        setCartCount(prevCount => prevCount + 1);
-      } else {
-        // Add the current count value to cart count
+    const { productId } = useParams();
+    const product = categoryDetails.flatMap(category => category.products).find(p => p.id === parseInt(productId));
+
+    const handleAddToCart = () => {
+      if(count > 0) {
+        addToCart(product, count);
         setCartCount(prevCount => prevCount + count);
       }
     }
+    
+    // function addToCart() {
+    //   if (count === 0) {
+    //     setCount(1)
+    //     // If count is 0, add 1 to cart
+    //     setCartCount(prevCount => prevCount + 1);
+    //   } else {
+    //     // Add the current count value to cart count
+    //     setCartCount(prevCount => prevCount + count);
+    //   }
+    // }
 
 
     function decrease(){
@@ -29,8 +40,7 @@ function ProductInfo({ setCartCount }) {
     function increase() {
       setCount(prevCount => prevCount + 1);
     }
-    const { productId } = useParams();
-    const product = categoryDetails.flatMap(category => category.products).find(p => p.id === parseInt(productId));
+    
 
   if (!product) {
     return <div>Product not found</div>;
@@ -50,7 +60,7 @@ function ProductInfo({ setCartCount }) {
               <button onClick={increase} className="plus-btn"><GoPlus /></button>
           </div>
           <div>
-            <button class="main-btn" onClick={addToCart}>ADD TO CART</button>
+            <button class="main-btn" onClick={handleAddToCart}>ADD TO CART</button>
           </div>
         </div>
       </div> 

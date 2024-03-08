@@ -9,6 +9,7 @@ import Service from "./Pages/Service";
 import Cart from "./Pages/Cart/Cart";
 import "./Components/Navbar/navbar.css";
 import SingleProduct from "./Pages/singleProduct";
+import { CartProvider } from './Components/contexts/CartContext';
 
 
 function App() {
@@ -22,8 +23,11 @@ function App() {
     // Update local storage when cartCount changes
     localStorage.setItem('cartCount', cartCount);
   }, [cartCount]);
+
+
   
   return (
+    <CartProvider>
     <BrowserRouter>
       <Navbar cartCount={cartCount}/>
       <Routes>
@@ -36,6 +40,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 
