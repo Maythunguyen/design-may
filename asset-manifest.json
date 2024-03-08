@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d6b76372.css",
+    "main.js": "/static/js/main.cbbd9d09.js",
+    "static/media/bg1.png": "/static/media/bg1.086902d7af2e95298b22.png",
+    "static/media/modern-house.png": "/static/media/modern-house.cd9cce32309cab40cb18.png",
+    "index.html": "/index.html",
+    "main.d6b76372.css.map": "/static/css/main.d6b76372.css.map",
+    "main.cbbd9d09.js.map": "/static/js/main.cbbd9d09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6b76372.css",
+    "static/js/main.cbbd9d09.js"
+  ]
+}
