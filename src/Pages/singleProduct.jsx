@@ -2,10 +2,11 @@ import React from "react";
 import ProductInfo from "../Components/CategoryProducts/ProductInfo";
 import Footer from "../Components/Footer/footer";
 
-function SingleProduct({ setCartCount }) {
+function SingleProduct() {
+
     return (
       <div>
-          <ProductInfo setCartCount={setCartCount}/>
+          <ProductInfo />
           <Footer/>
       </div>
     )

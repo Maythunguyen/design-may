@@ -5,9 +5,13 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { useCart } from '../contexts/CartContext';
 
 
-const Navbar = ({ cartCount }) => {
+const Navbar = () => {
+
+    const { cartCount } = useCart();
+    console.log('Cart Count:', cartCount);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     function toggleMenu() {
@@ -27,7 +31,9 @@ const Navbar = ({ cartCount }) => {
                 <Link to="/">Design May</Link>
             </div>
             <div className="nav-icons">
-                <Link to="/cart"><HiOutlineShoppingBag size={24} /><span className="count">({cartCount})</span></Link>   
+                <Link to="/cart"><HiOutlineShoppingBag size={24} />
+                    <span className="count">({cartCount})</span>
+                </Link>   
             </div>
         </div>
         <div className="nav-area">

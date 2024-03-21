@@ -7,7 +7,7 @@ import { GoPlus } from "react-icons/go";
 import { useCart } from '../contexts/CartContext';
 
 
-function ProductInfo({ setCartCount }) {
+function ProductInfo() {
     const { addToCart } = useCart();
     const [count, setCount] = useState(0);
     const { productId } = useParams();
@@ -16,20 +16,9 @@ function ProductInfo({ setCartCount }) {
     const handleAddToCart = () => {
       if(count > 0) {
         addToCart(product, count);
-        setCartCount(prevCount => prevCount + count);
       }
     }
     
-    // function addToCart() {
-    //   if (count === 0) {
-    //     setCount(1)
-    //     // If count is 0, add 1 to cart
-    //     setCartCount(prevCount => prevCount + 1);
-    //   } else {
-    //     // Add the current count value to cart count
-    //     setCartCount(prevCount => prevCount + count);
-    //   }
-    // }
 
 
     function decrease(){
